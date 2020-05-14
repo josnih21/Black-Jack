@@ -1,8 +1,13 @@
 import * as React from "react";
 import { GreetingsProps } from "./types";
+import styled from '@emotion/styled';
 
+const ContainerStyled  = styled.h1`
+  font-size : 72px;
+  color : blue;
+`;
 export const Greetings:React.FC<GreetingsProps> = ({name,lastName}) => (
-<h1>Hello, {name}{lastName}</h1>
+<ContainerStyled>Hello, {name}{lastName}</ContainerStyled>
 );
 
 //export default Greetings default export ejemplo va sin llaves en App.tsx
