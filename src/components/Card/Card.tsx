@@ -1,16 +1,17 @@
 import React, {FC} from 'react';
 import { CardProps } from './types';
-import { BodyCard } from './styles';
+import { BodyCard, Value } from './styles';
 
+export const ARIA_LABEL = 'card'
 
 
 const Card:FC<CardProps> = ({stick,rank = "2"}) => {
   return (
     <BodyCard>
-      <span>
+      <Value aria-label = {ARIA_LABEL}color = {stick}>
         {stick}
         {rank}
-      </span>
+      </Value>
     </BodyCard>
   )
 

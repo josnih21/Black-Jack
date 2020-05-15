@@ -9,3 +9,8 @@ export const BodyCard = styled.div`
   padding: 10px;
   margin: 10px;
 `
+
+export const Value = styled.div`
+  font-size: 2rem;
+  color: ${props  => props.color === "♥" || props.color === "♦" ? "red": "black"};
+`;
