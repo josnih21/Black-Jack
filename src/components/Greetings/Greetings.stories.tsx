@@ -9,4 +9,4 @@ export default {
   decorators: [withKnobs,withA11y]
 };
 
-export const withName = () => <Greetings name={'Josnih'}/>;
+export const withName = () => <Greetings name={text("Nombre","Paco")}/>;
